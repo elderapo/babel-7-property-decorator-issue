@@ -1,0 +1,25 @@
+{
+  "name": "babel-7-property-decorator-issue",
+  "version": "1.0.0",
+  "author": "Tomasz Martyński <tomek@martynski.pl>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^11.11.7",
+    "babel-plugin-transform-typescript-metadata": "^0.2.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
+  },
+  "scripts": {
+    "ts-node-start": "ts-node ./src/index.ts",
+    "babel-start": "yarn babel-build && node ./compiled-with-babel/index.js",
+    "build": "yarn tsc-build && yarn babel-build",
+    "tsc-build": "tsc",
+    "babel-build": "babel src --out-dir compiled-with-babel --extensions \".ts,.tsx\" --source-maps inline"
+  }
+}
