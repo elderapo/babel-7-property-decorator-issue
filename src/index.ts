@@ -1,3 +1,5 @@
+import "@abraham/reflection";
+
 const LogUpdate = () => {
   return (target: Object, key: string | symbol) => {
     let val = target[key];

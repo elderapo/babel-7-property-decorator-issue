@@ -4,6 +4,7 @@
   "author": "Tomasz Martyński <tomek@martynski.pl>",
   "license": "MIT",
   "dependencies": {
+    "@abraham/reflection": "^0.5.1",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
